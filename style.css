@@ -1,0 +1,234 @@
+body{
+    background-color: #1b243b;
+    margin: 0;
+}
+
+
+.suscripcion{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px 5px;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    max-width: 55%;
+}
+
+.suscripcion h1{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.check{
+    display: flex;
+}
+
+.check img{
+    margin-right: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario button,
+.formulario input{
+    margin-top: 10px;
+}
+
+.formulario input{
+    padding: 15px 10px;   
+    border-radius: 10px; 
+    border: 1px solid #747272;
+    cursor: pointer;
+}
+
+.formulario input::placeholder{
+    font-size: 15px;
+}
+
+.formulario button{
+    padding: 15px 0;
+    border-radius: 10px;
+    border: 0;
+    background: linear-gradient(50deg, rgb(230, 55, 84),#ff8503 180%, #dd7507) ;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.10s ease;
+}
+
+
+.isquierda{
+    margin-right: 10px;
+
+}
+
+.derecha ,
+.isquierda{
+    margin: 0 10px;
+}
+
+.isquierda{
+    margin-left: 30px;
+}
+
+
+.formulario label{
+    font-size: 13px;
+    color:  #000;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.formulario span{
+    display: none;
+    color: rgb(243, 9, 9);
+
+}
+
+
+
+.formulario button:hover {
+    background: #111c3a ;
+}
+
+
+
+
+#usuario{
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: #fff;
+    padding: 3% 2%;
+    border-radius: 30px;
+    width: 30%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#usuario h2{
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+
+#correoMostrado{
+    font-weight: bold;
+}
+
+.boton{
+    padding: 15px 0;
+    border-radius: 10px;
+    border: 0;
+    background: linear-gradient(50deg, rgb(230, 55, 84),#ff8503 180%, #dd7507) ;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.10s ease;
+    width: 100%;
+}
+
+.derecha .img2{
+    display: none;
+}
+
+.boton:hover {
+    background: #111c3a ;
+}
+
+@media (max-width:1188px ) {
+
+    #usuario h2{
+        font-size: 45px;
+    }
+
+    .suscripcion{
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+    }
+
+    .derecha .img2{
+        display: none;
+    }
+    
+}
+
+@media (max-width:800px ) {
+
+    
+    .suscripcion{
+        max-width: 100%;
+        padding: 0;
+        padding-bottom: 2%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #usuario{
+        width: 70%;
+    }
+
+   
+    #usuario h2{
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width:680px ) {
+    .suscripcion{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        background-color: transparent;
+        background-color: #fff;
+
+    }
+
+    #usuario h2{
+        font-size: 50px;
+    }
+    
+    .derecha,
+    .isquierda{
+        margin: 0;
+    }
+
+    .isquierda{
+        padding: 5px;
+    }
+
+    .derecha .img1{
+        display: none;
+    }
+
+    .derecha{
+        width: 100%;
+    }
+
+    .derecha .img2{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width:500px ) {
+    body{
+        background-color: #fff;
+    }
+}
